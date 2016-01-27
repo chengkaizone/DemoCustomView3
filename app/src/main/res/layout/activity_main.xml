@@ -6,6 +6,11 @@
     android:orientation="vertical"
     tools:context="com.example.leeyou.app.MainActivity">
 
+    <Button
+        android:id="@+id/btn_font"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Font View" />
 
     <Button
         android:id="@+id/btn_maskfilter"
@@ -19,7 +24,5 @@
         android:layout_height="48dp"
         android:text="Shadow View" />
 
-    <com.example.leeyou.app.custom.FontView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+
 </LinearLayout>

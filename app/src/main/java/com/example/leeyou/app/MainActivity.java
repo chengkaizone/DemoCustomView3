@@ -13,6 +13,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        Button btn_font = (Button) findViewById(R.id.btn_font);
+        btn_font.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, FontActivity.class));
+            }
+        });
+
         Button btn_maskfilter = (Button) findViewById(R.id.btn_maskfilter);
         btn_maskfilter.setOnClickListener(new View.OnClickListener() {
             @Override

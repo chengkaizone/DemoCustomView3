@@ -18,7 +18,8 @@
         <activity
             android:name=".MaskFilterActivity"
             android:hardwareAccelerated="false" />
-        <activity android:name=".ShadowActivity"></activity>
+        <activity android:name=".ShadowActivity" />
+        <activity android:name=".FontActivity"></activity>
     </application>
 
 </manifest>
