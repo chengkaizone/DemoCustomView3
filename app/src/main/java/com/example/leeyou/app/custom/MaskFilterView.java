@@ -13,13 +13,14 @@ import com.example.leeyou.app.MeasureUtil;
 
 /**
  * Created by leeyou on 2016/1/27.
+ *
+ *
  */
 public class MaskFilterView extends View {
 
     private static final int RECT_SIZE = 800;
 
     private Paint mPaint;
-    private Context context;
 
     private int left, top, right, bottom;
 
@@ -49,7 +50,7 @@ public class MaskFilterView extends View {
 
 //        mPaint.setMaskFilter(new BlurMaskFilter(20, BlurMaskFilter.Blur.OUTER));
 //        mPaint.setMaskFilter(new BlurMaskFilter(20, BlurMaskFilter.Blur.INNER));
-        mPaint.setMaskFilter(new BlurMaskFilter(20, BlurMaskFilter.Blur.SOLID));
+        mPaint.setMaskFilter(new BlurMaskFilter(50, BlurMaskFilter.Blur.SOLID));
     }
 
     public MaskFilterView(Context context, AttributeSet attrs, int defStyleAttr) {
@@ -59,7 +60,7 @@ public class MaskFilterView extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        canvas.drawColor(Color.GRAY);
+        canvas.drawColor(Color.WHITE);
 
         canvas.drawRect(left, top, right, bottom, mPaint);
     }

@@ -12,12 +12,13 @@ import com.example.leeyou.app.MeasureUtil;
 
 /**
  * Created by leeyou on 2016/1/27.
+ *
+ *
  */
 public class ShadowView extends View {
     private static final int RECT_SIZE = 800;
 
     private Paint mPaint;
-    private Context context;
 
     private int left, top, right, bottom;
 
